@@ -5,9 +5,11 @@ export (float) var rotation_speed = 4
 export (int) var jump_speed = 1000
 export (int) var gravity = 3000
 
+export (PackedScene) var box : PackedScene
 
 onready var target := position
 onready var sprite := $Sprite
+#onready var box := preload("res://Objects/Box.tscn")
 
 var velocity := Vector2.ZERO
 var rotation_dir := 0
@@ -52,9 +54,20 @@ func get_mouse_input():
 func get_side_input():
 	velocity.x = Input.get_action_strength("right")-Input.get_action_strength("left")
 	velocity.x *= speed
+	if velocity.x > 0:
+		sprite.play("right")
+	elif velocity.x < 0:
+		sprite.play("left")
+	else:
+		sprite.stop()
+		sprite.frame = 0
 
 	if is_on_floor() and Input.is_action_just_pressed('jump'):
 		velocity.y = -jump_speed
+		get_tree().call_group("HUD", "updateScore")
+		var boxNode := box.instance()
+		boxNode.position = global_position
+		owner.add_child(boxNode)
 
 func _input(event):
 	if event.is_action_pressed("click"):
