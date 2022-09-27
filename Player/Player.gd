@@ -96,6 +96,11 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	get_side_input()
 	
+	# NÃO FAZER ASSIM!
+	#if position.y > 700:
+	#	get_tree().change_scene("res://GameOver.tscn")
+	
 	# Aplica o deslocamento calculado ou desejado
 	
 	velocity = move_and_slide(velocity, Vector2.UP)
+
