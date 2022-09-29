@@ -1,0 +1,44 @@
+{
+    "id": "da000717-680a-7411-76aa-413514e493ff",
+    "modelName": "GMProject",
+    "mvc": "1.0",
+    "IsDnDProject": true,
+    "configs": [
+        
+    ],
+    "option_ecma": false,
+    "parentProject": {
+        "id": "06da5323-1d32-7ce0-0272-14c50f01b29e",
+        "modelName": "GMProjectParent",
+        "mvc": "1.0",
+        "alteredResources": [
+            
+        ],
+        "hiddenResources": [
+            
+        ],
+        "projectPath": "${base_project}"
+    },
+    "resources": [
+        {
+            "Key": "a375b6b6-7dda-39e5-ba86-39c5830b4a4d",
+            "Value": {
+                "id": "43b35961-745a-984f-af49-9f3742686eb4",
+                "resourcePath": "sprites\\sprite_GrassTile\\sprite_GrassTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f26c176b-e77a-1092-eff2-441ddbaf4ed8",
+            "Value": {
+                "id": "0dab0cd9-5f7e-a20f-01b6-400ac1254bcd",
+                "resourcePath": "tilesets\\tileset_GrassTile\\tileset_GrassTile.yy",
+                "resourceType": "GMTileSet"
+            }
+        }
+    ],
+    "script_order": [
+        
+    ],
+    "tutorial": ""
+}

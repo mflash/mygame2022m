@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tiles/PlatformerForestTileset16x16/Autotiling/Godot/GrassTile/tileset_GrassTile.tres" type="TileSet" id=2]
+[ext_resource path="res://Objects/Box.tscn" type="PackedScene" id=3]
+
+[node name="ForestLevel" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 507, 279 )
+box = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.5
+drag_margin_top = 0.5
+drag_margin_right = 0.5
+drag_margin_bottom = 0.5
+editor_draw_drag_margin = true
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 3, 4 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65549, 0, 0, 65550, 0, 2, 131085, 0, 65536, 131086, 0, 65538, 196621, 0, 65536, 196622, 0, 65538, 262157, 0, 65536, 262158, 0, 65538, 327685, 0, 0, 327686, 0, 1, 327687, 0, 1, 327688, 0, 1, 327689, 0, 1, 327690, 0, 1, 327691, 0, 1, 327692, 0, 1, 327693, 0, 131078, 327694, 0, 65538, 393221, 0, 131072, 393222, 0, 131073, 393223, 0, 131073, 393224, 0, 131073, 393225, 0, 131073, 393226, 0, 131073, 393227, 0, 131073, 393228, 0, 131073, 393229, 0, 131073, 393230, 0, 131074 )
+
+[node name="SceneLimit" type="Position2D" parent="."]
+position = Vector2( 676, 678 )
+__meta__ = {
+"_gizmo_extents_": 68.8
+}

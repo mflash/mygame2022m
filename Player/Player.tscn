@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/char.png" type="Texture" id=2]
+[ext_resource path="res://SFX/jump1.ogg" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
@@ -125,3 +126,7 @@ animation = "down"
 visible = false
 position = Vector2( 0.5, 0.25 )
 shape = SubResource( 1 )
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "SFX"

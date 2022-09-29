@@ -9,6 +9,7 @@ export (PackedScene) var box : PackedScene
 
 onready var target := position
 onready var sprite := $Sprite
+onready var audio  := $AudioPlayer
 #onready var box := preload("res://Objects/Box.tscn")
 
 var velocity := Vector2.ZERO
@@ -68,6 +69,7 @@ func get_side_input():
 		var boxNode := box.instance()
 		boxNode.position = global_position
 		owner.add_child(boxNode)
+		audio.play()
 
 func _input(event):
 	if event.is_action_pressed("click"):

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/char.png-f9e9149901470a1644d9c86f4bbc411c.stex"
+path="res://.import/56ff9eff-977e-0163-2aac-7f6996ddc05d.png-4e11a3dd5ad401930d25f7510f382641.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/char.png"
-dest_files=[ "res://.import/char.png-f9e9149901470a1644d9c86f4bbc411c.stex" ]
+source_file="res://tiles/PlatformerForestTileset16x16/Autotiling/GameMakerStudio 2/GrassTile/sprites/sprite_GrassTile/56ff9eff-977e-0163-2aac-7f6996ddc05d.png"
+dest_files=[ "res://.import/56ff9eff-977e-0163-2aac-7f6996ddc05d.png-4e11a3dd5ad401930d25f7510f382641.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
